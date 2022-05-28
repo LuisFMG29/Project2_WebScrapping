@@ -1,7 +1,9 @@
 # Project2_WebScrapping
+
 Segundo proyecto del Bootcamp de Análisis de datos, esta vez enfocado a la obtención de información mediante Web Scrapping o el uso de API's dedicadas para la obtención de información. Especificamente en este proyecto, se utilizó el método de Web Scrapping para la obtención de información de la página IMDb. De esta recopilación se buscaron los valores de Titulo, Año(s) de emision y los posibles generos que pueden encasillar al contenido.
 
 ### Obtención de información
+
 El proceso que se llevó a cabo para la extracción de la información fue el siguiente:
 
 Para la obtención de la información, decidí moverme desde la página principal de IMDb a la página donde se estructura por géneros, desde esta pagina mediante web scrapping se buscaron los links que nos enviaran a cada una de estas páginas. 
@@ -13,6 +15,7 @@ Este primer link se hizo de forma independiente para verificar el funcionamiento
 Para unir todo en un solo dataframe, primero se creó un dataframe base al cual se le realizaron numerosos append para al final obtener 7500 renglones.
 
 ### Resultados
+
 Los resultados son CSV creado a partir de un dataframe de 7500 renglones y 3 columnas conformado por un total de 15 genero con respectivos subgeneros.
 
 ### Obstaculos
@@ -28,4 +31,5 @@ En el apartado de APIs, me parece que el obstaculo más grande se trata de la do
 Como web scrapping, creo que una de los obstaculos que encontré es que la información se encuentra en el orden en que se encuentra el HTML por lo que si hay poarte de la información perdida o no se encuentra, puede resultar incompleta y dependiendo del método que se use para hacer los dataframes puede no funcionar. en este caso utilicé list comprenhension por lo que si las listas de la información no eran del mismo tamaño, no podia crear los dataframes lo que me obligó a no poder obtener información que queria obtener.
 
 ###Lecciones aprendidas
+
 Me parece que las lecciones aprendidas más importantes es hacer una correcta investigación de las APIs que se plantean utilizar para entenderlas a profundidad ya que aunque es relativamente sencillo, pueden encontrarse obstaculos que hay que resolver. Como web scrapping, muchas veces hay que utilizar pensamiento out of the box para poderlo resolver encontrando toda la información necesaria o que la información faltante no nos afecte.
